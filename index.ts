@@ -221,7 +221,10 @@ export function loadSavedConfig(): SavedMagpieConfig | null {
 
   baseUrl = normalizeGatewayUrl(baseUrl);
 
-  if (!apiKey && !baseUrl) {
+  // Without a credential this is not a usable configuration: do not register a
+  // provider that points at a gateway, otherwise Pi would treat it as logged in and
+  // refresh it. `MAGPIE_BASE_URL` alone is only used by the /login prompt.
+  if (!apiKey) {
     return null;
   }
 

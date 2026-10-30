@@ -1,6 +1,6 @@
 {
   "name": "@evalexp/magpie-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Magpie gateway provider extension for Pi Coding Agent",
   "type": "module",
   "author": "evalexp",
