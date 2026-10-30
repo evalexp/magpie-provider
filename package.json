@@ -1,0 +1,50 @@
+{
+  "name": "@evalexp/magpie-provider",
+  "version": "1.0.0",
+  "description": "Magpie gateway provider extension for Pi Coding Agent",
+  "type": "module",
+  "author": "evalexp",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evalexp/magpie-provider.git"
+  },
+  "homepage": "https://github.com/evalexp/magpie-provider#readme",
+  "bugs": {
+    "url": "https://github.com/evalexp/magpie-provider/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "magpie",
+    "llm",
+    "gateway",
+    "provider"
+  ],
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  }
+}
